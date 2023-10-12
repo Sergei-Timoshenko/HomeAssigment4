@@ -57,5 +57,7 @@ public class Main {
 
         User user = Configuration.getUser();
         System.out.println(user.toString());
+        user.setName("Terminator");
+        System.out.println(user.toString());
     }
 }
