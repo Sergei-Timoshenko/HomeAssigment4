@@ -52,7 +52,7 @@ public class Main {
             sportsman1.tryToSetTheWorldRecord();
             sportsman2.tryToSetTheWorldRecord();
         }
-        System.out.println("TheWorldChampion: " + SportsmenRecords.getBestSportsman().toString());
+        System.out.println("The World Champion: " + SportsmenRecords.getBestSportsman().toString());
         System.out.println();
 
         User user = Configuration.getUser();
