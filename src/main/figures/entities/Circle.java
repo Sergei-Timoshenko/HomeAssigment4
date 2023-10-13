@@ -1,5 +1,8 @@
 package main.figures.entities;
 
-public record Circle(double radius) {
+import main.figures.interfaces.FigureShape;
 
+import java.util.Objects;
+
+public record Circle(double radius) {
 }

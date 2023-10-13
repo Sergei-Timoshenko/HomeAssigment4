@@ -14,15 +14,16 @@ import main.utils.Configuration;
 
 public class Main {
     public static void main(String[] args) {
-        FigureShape circle = obj -> {
-            double radius = ((Circle) obj).radius();
+        FigureShape<Circle> circle = obj -> {
+            double radius = obj.radius();
             return 2 * Math.PI * radius;
         };
         System.out.println("Circle area (R = 0.1): " + circle.getArea(new Circle(.1)));
 
-        FigureShape rectangle = obj -> {
-            double width = ((Rectangle) obj).width();
-            double height = ((Rectangle) obj).height();
+
+        FigureShape<Rectangle> rectangle = obj -> {
+            double width = obj.width();
+            double height = obj.height();
             return width * height;
         };
         System.out.println("Rectangle area (H = 0.1, W = 0.2) " + rectangle.getArea(new Rectangle(.1, .2)));
