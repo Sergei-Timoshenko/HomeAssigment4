@@ -41,7 +41,7 @@ public class Main {
         Drawing drawing = new Drawing();
         Shape draw1 = drawing.getShape("Black Square");
         Shape draw2 = drawing.getShape("White Square");
-        System.out.printf("We got two paintings: %s and %s", draw1.getDraw(), draw2.getDraw());
+        System.out.printf("We got two paintings: %s and %s%n", draw1.getDraw(), draw2.getDraw());
         System.out.println();
 
         Sportsman sportsman1 = new Sportsman("Serhii");
