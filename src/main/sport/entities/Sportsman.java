@@ -22,7 +22,7 @@ public class Sportsman {
         return bestScore;
     }
 
-    public void tryToSetTheWorldRecord() {
+    public void tryToBeatTheWorldRecord() {
         int currentScore = Random.getScore();
         if (bestScore < currentScore) {
             bestScore = currentScore;
